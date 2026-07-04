@@ -28,6 +28,7 @@ jobs:
       - name: Run notebooks
         run: |
           for notebook in notebooks/*.ipynb; do
-            jupyter nbconvert --to script --output-dir=/tmp "\$notebook"
-            python /tmp/\$(basename "\$notebook" .ipynb).py || echo "Notebook \$notebook failed"
+            echo "Running $notebook"
+            jupyter nbconvert --to script --output-dir=/tmp "$notebook"
+            python /tmp/$(basename "$notebook" .ipynb).py || echo "Notebook $notebook failed"
           done
