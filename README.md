@@ -1,5 +1,7 @@
 # Machine Learning Projects
 
+[![ML CI/CD](https://github.com/eugenius-watchman/machine_learning/actions/workflows/ci.yml/badge.svg)](https://github.com/eugenius-watchman/machine_learning/actions/workflows/ci.yml)
+
 A collection of machine learning notebooks and projects covering:
 
 - Data analysis and visualisation
@@ -20,3 +22,8 @@ A collection of machine learning notebooks and projects covering:
 - Python 3.10+
 - Jupyter Notebook
 - Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
+
+## Installation
+
+```bash
+pip install -r requirements.txt
